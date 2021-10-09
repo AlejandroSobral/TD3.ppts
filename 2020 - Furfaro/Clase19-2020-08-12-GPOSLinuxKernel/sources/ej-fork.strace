@@ -1,0 +1,62 @@
+execve("./ej-fork", ["ej-fork"], 0x7fff1196f580 /* 71 vars */) = 0
+brk(NULL)                               = 0x55a3d52ab000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/alejandro/mylibs/tls/haswell/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/alejandro/mylibs/tls/haswell/x86_64", 0x7ffe34a0c830) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/alejandro/mylibs/tls/haswell/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/alejandro/mylibs/tls/haswell", 0x7ffe34a0c830) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/alejandro/mylibs/tls/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/alejandro/mylibs/tls/x86_64", 0x7ffe34a0c830) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/alejandro/mylibs/tls/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/alejandro/mylibs/tls", 0x7ffe34a0c830) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/alejandro/mylibs/haswell/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/alejandro/mylibs/haswell/x86_64", 0x7ffe34a0c830) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/alejandro/mylibs/haswell/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/alejandro/mylibs/haswell", 0x7ffe34a0c830) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/alejandro/mylibs/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/alejandro/mylibs/x86_64", 0x7ffe34a0c830) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/alejandro/mylibs/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/alejandro/mylibs", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+openat(AT_FDCWD, "tls/haswell/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "tls/haswell/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "tls/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "tls/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "haswell/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "haswell/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=342083, ...}) = 0
+mmap(NULL, 342083, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f4a7c797000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260\34\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=2030544, ...}) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4a7c795000
+mmap(NULL, 4131552, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f4a7c1d3000
+mprotect(0x7f4a7c3ba000, 2097152, PROT_NONE) = 0
+mmap(0x7f4a7c5ba000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e7000) = 0x7f4a7c5ba000
+mmap(0x7f4a7c5c0000, 15072, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f4a7c5c0000
+close(3)                                = 0
+arch_prctl(ARCH_SET_FS, 0x7f4a7c7964c0) = 0
+mprotect(0x7f4a7c5ba000, 16384, PROT_READ) = 0
+mprotect(0x55a3d516e000, 4096, PROT_READ) = 0
+mprotect(0x7f4a7c7eb000, 4096, PROT_READ) = 0
+munmap(0x7f4a7c797000, 342083)          = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f4a7c796790) = 20404
+getpid()                                = 20403
+fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 0), ...}) = 0
+brk(NULL)                               = 0x55a3d52ab000
+brk(0x55a3d52cc000)                     = 0x55a3d52cc000
+write(1, "[Padre]: PID: 20403. PID hijo: 2"..., 37) = 37
+write(1, "[Padre]: Esperando que termine m"..., 58) = 58
+wait4(-1, NULL, 0, NULL)                = 20404
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=20404, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+write(1, "[Padre]: Termino el proceso hijo"..., 88) = 88
+write(1, "[Padre]: Dentro de 10 segundos t"..., 72) = 72
+nanosleep({tv_sec=10, tv_nsec=0}, 0x7ffe34a0d160) = 0
+write(1, "[Padre]: Mi variable cont vale: "..., 34) = 34
+exit_group(0)                           = ?
++++ exited with 0 +++
